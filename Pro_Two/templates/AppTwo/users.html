@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Users</title>
+  </head>
+  <body>
+    <!-- <h1>Here are your users:</h1>
+    <ol>
+      {% for user in users_list %}
+        <li>
+          <ul>
+            <p>First Name: {{ user.first_name }}</p>
+            <p>Last Name: {{user.last_name}}</p>
+            <p>Email: {{user.email}}</p>
+          </ul>
+        </li>
+      {% endfor %}
+    </ol> -->
+    <div class="container">
+      <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" name="submit" class="btn btn-primary" value="Sign Up!">
+      </form>
+    </div>
+  </body>
+</html>
