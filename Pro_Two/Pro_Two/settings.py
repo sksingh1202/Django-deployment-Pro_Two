@@ -25,7 +25,7 @@ SECRET_KEY = 'r-gx0=jd3!(i%22a$*^$70w+$g=!91+5b+*kd%e%+)a_@k5_yn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['webbender.pythonanywhere.com']
 
 
 # Application definition
